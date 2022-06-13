@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+.react-responsive-modal-modal {
+  width: 30%;
+  overflow: visible !important;
+  border: 20px solid #061F6C;
+}
+
+.react-responsive-modal-closeButton {
+  top: -14px !important;
+  right: -14px !important;
+}
