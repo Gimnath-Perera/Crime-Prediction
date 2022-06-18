@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "c6db9b34-c252-4e5d-b85b-bc052da7613f",
+		"name": "Crime-Prediction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15580341"
+	},
+	"item": [
+		{
+			"name": "Get Prediction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"day_of_week\": 5,\r\n    \"pd_district\": 2,\r\n    \"address\": 10633,\r\n    \"x\": -122.3995877,\r\n    \"y\": 37.73505101,\r\n    \"year\": 2022,\r\n    \"month\": 4,\r\n    \"day\": 10,\r\n    \"hour\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.101:5000/api/crime/predict",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"101"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"crime",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

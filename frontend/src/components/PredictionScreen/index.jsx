@@ -35,7 +35,7 @@ const PredictionScreen = ({ onClose, supervisedResult }) => {
             <Lottie options={defaultOptions} height={110} width={500} />
           </div>
           <h2 class='mt-6 text-md ?leading-5 font-semibold text-center'>
-            LARCENY/THEFT
+            {supervisedResult?.crime || '-'}
           </h2>
         </div>
       </div>
